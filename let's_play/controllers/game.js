@@ -1,10 +1,10 @@
 // Internal Imports
 const Users = require('../models/User');
 
-// @desc  Update wins
-// @route   PUT /game/wins
+// @desc  Update win
+// @route   PUT /game/win
 // @access  user based
-exports.putGameWins = (req, res) => {
+exports.putGameWin = (req, res) => {
     const id = req.id;
     Users.incrementScoreById(id);
     return res
@@ -12,7 +12,7 @@ exports.putGameWins = (req, res) => {
             .send('Point added to the User.');
 }
 
-// @desc  Update loses
+// @desc  Update lose
 // @route   PUT /game/lost
 // @access  user based
 exports.putGameLost = (req, res) => {
