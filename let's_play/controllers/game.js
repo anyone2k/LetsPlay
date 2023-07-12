@@ -1,4 +1,6 @@
+// Internal Imports
 const Users = require('../models/User');
+
 // @desc  Update wins
 // @route   PUT /game/wins
 // @access  user based

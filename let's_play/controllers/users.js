@@ -1,3 +1,4 @@
+// Internal Imports
 const Users = require('../models/User');
 
 // @desc  read users
@@ -37,7 +38,7 @@ exports.putUserbyId = (req, res, next) => {
 }
 // @desc  detele user 
 // @route   DELETE /users/:id
-// @access  private
+// @access  private(Admin only)
 exports.deleteUserbyId = (req, res, next) => {
   const { id } = req.body;
   const user = Users.findById(id);

@@ -1,5 +1,6 @@
 // Internal Exports
 const Users = require('../models/User');
+
 // @desc  read me
 // @route   GET /me
 // @access  Private

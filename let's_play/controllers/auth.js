@@ -1,6 +1,8 @@
-const Users = require('../models/User');
+// External imports
 const jwt = require('jsonwebtoken');
 
+// Internal Imports
+const Users = require('../models/User');
 
 // @desc  create login  
 // @route   post /auth/login
